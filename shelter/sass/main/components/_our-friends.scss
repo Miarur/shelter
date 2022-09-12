@@ -1,0 +1,206 @@
+.our-friends {
+  margin: 0px;
+  padding: 0px;
+  background-color: $background-color-second;
+}
+
+.our-friends__wrapper {
+  padding: 80px 0px 100px 0px;
+  background-color: $background-color-second;
+
+  @include media-mobile-small {
+    padding: 42px 0px 42px 0px;
+  }
+
+}
+
+
+.title {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  word-wrap: wrap;
+  letter-spacing: 0.06em;
+
+  @include media-mobile-small {
+    @include font(2.5rem, 3.25rem);
+  }
+}
+
+.--our-friends {
+  margin: 0px auto;
+  max-width: 400px;
+  min-height: 90px;
+
+  @include media-mobile-small {
+    width: 300px;
+    height: 64px;
+  }
+}
+
+.our-friends__container {
+  margin: 0px auto;
+  padding: 60px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 435px;
+
+  @include media-tablet {
+    
+    max-width: 708px;
+    min-height: 435px;
+    .--hidden {
+      display: none;
+    }
+  }
+
+  @include media-mobile-small {
+    padding: 18px 0px 0px 0px;
+  }
+
+}
+
+.our-friends__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  background-color: $color-white;
+  @extend %transition;
+
+
+  &:nth-child(2) {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  &:hover {
+    background-color: $color-lite;
+    box-shadow: 0px 0px 15px 1px $color-primary-light;
+    transform: scale(1.1);
+    cursor: url('../../assets/icons/Vector.svg'), pointer;
+
+    .item__image {
+      cursor: url('../../assets/icons/Vector.svg'), pointer;
+    }
+
+    .item__content {
+      cursor: url('../../assets/icons/Vector.svg'), pointer;
+    }
+
+    .item__button {
+      background-color: $color-primary-light;
+    }
+  }
+
+  @include media-tablet {
+    max-width: 270px;
+    min-height: 435px;
+
+    &:nth-child(2) {
+      margin-left: 35px;
+      margin-right: 0px;
+    }
+  }
+
+  @include media-mobile-small {
+    order: 1;
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+.item__content {
+  margin: 0px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+  font-family: 'Georgia', serif;
+  @include font(2.0rem, 2.272rem);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.item__button {
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+  width: 187px;
+  height: 52px;
+  background: none;
+  border-radius: 100px;
+  border: 2px solid $color-primary-light;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  @extend %transition;
+}
+
+
+.item__button {
+  &.--left-button {
+    margin: 0px 53px 0px 0px;
+    padding: 0px;
+    width: 52px;
+    height: 52px;
+    background: url('../../assets/images/our_friends/button_arrow.svg') no-repeat;
+    background-position: center;
+    border: none;
+
+    @include media-tablet {
+      margin: 0px 12px 0px 0px;
+    }
+
+    @include media-mobile-small {
+      margin: 20px 80px 0px 0px;
+      order: 2;
+    }
+  }
+
+  &.--rigth-button {
+    margin: 0px 0px 0px 53px;
+    padding: 0px;
+    width: 52px;
+    height: 52px;
+    background: url('../../assets/images/our_friends/button_arrow.svg') no-repeat;
+    transform: rotate(180deg);
+    border: none;
+
+    @include media-laptop {
+      margin: 0px 0px 0px 12px;
+    }
+
+    @include media-mobile-small {
+      margin: 20px 0px 0px 0px;
+      order: 3;
+    }
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+.button__wrapper {
+  margin: 60px 0px 0px 0px;
+
+  @include media-mobile-small {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+.--gold {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  word-wrap: normal;
+  width: 261px;
+  min-height: 52px;
+  background: $color-primary;
+  border: 0px;
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,120 @@
+
+.title {
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  max-width: 400px;
+  min-height: 90px;
+  @extend %font-primary;
+  color: $color-black;
+
+  @include media-mobile-small {
+    @include font(2.5rem, 3.25rem);
+    max-width: 300px;
+    height: 64px;
+  }
+}
+
+.--our-friends {
+  margin: 0 auto;
+  padding: 80px 0px 0px 0px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @include media-mobile-small {
+    padding: 42px 0px 0px 0px;
+  }
+}
+
+.pet__container {
+  margin: 45px 0px 0px 0px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  @include media-tablet {
+    margin: 30px 0px 0px 0px;
+    padding: 0px 30px;
+    justify-content: center;
+    gap: 30px 40px;
+
+    .pet__item:last-child {
+      display: none;
+    }
+
+    .pet__item:nth-last-child(2) {
+      display: none;
+    }
+  }
+
+  @include media-mobile-small {
+    margin: 60px 0px 0px 0px;
+    padding: 0px 15px;
+    gap: 30px 0px;
+
+    .pet__item:nth-child(4) {
+      display: none;
+    }
+
+    .pet__item:nth-child(5) {
+      display: none;
+    }
+
+    .pet__item:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+.pet__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 270px;
+  min-height: 435px;
+  background-color: $color-white;
+  @extend %transition; 
+  &:hover {
+    background-color: $color-lite;
+    box-shadow: 0px 0px 15px 1px $color-primary-light;
+    transform: scale(1.1);
+    cursor: url('../../assets/icons/Vector.svg'), pointer;
+
+    .item__image {
+      cursor: url('../../assets/icons/Vector.svg'), pointer;
+    }
+
+    .item__content {
+      cursor: url('../../assets/icons/Vector.svg'), pointer;
+    }
+
+    .item__button {
+      background-color: $color-primary-light;
+    }
+
+  }
+
+  @include media-tablet {
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+}
+
+.item__content {
+  margin: 0px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+  @extend %font-primary; 
+  @include font(2.0rem, 2.272rem);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-black;
+}
+

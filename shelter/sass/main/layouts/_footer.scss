@@ -1,0 +1,241 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  margin: 0px;
+  padding: 0px;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) #211F20;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 1200px;
+  min-height: 310px;
+
+  @include media-laptop {
+    justify-content: center;
+    align-content: center;
+  }
+
+  @include media-tablet {
+    padding-top: 30px;
+    max-width: 708px;
+    min-height: 234px;
+  } 
+
+  @include media-mobile-small {
+    justify-content: center;
+    align-content: center;
+    max-width: 300px;
+  }
+}
+
+.--footer {
+  margin: 0px;
+  padding: 0px;
+  max-width: 278px;
+  min-height: 90px;
+  text-align: left;
+  @include font(3.5rem, 4.55rem);
+  letter-spacing: 0.059em;
+  color: $color-lite;
+
+  @include media-mobile-small {
+    @include font(2.5rem, 3.25rem);
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.footer__contacts {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 278px;
+  min-height: 234px;
+}
+
+.footer__address {
+  margin: 0px 160px 0px 160px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 302px;
+  min-height: 234px;
+
+  @include media-laptop {
+    justify-content: center;
+    align-content: center;
+    margin: 0px 0px 0px 60px;
+  }
+
+  @include media-tablet{
+    margin: 0px 0px 0px 60px;
+  } 
+
+  @include media-mobile-small {
+    margin: 0px 0px 0px 0px;
+    justify-content: center;
+    align-content: center;
+    max-width: 300px;
+  }
+}
+
+.footer__link {
+  position: relative;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  @extend %font-primary;
+  @include font(2.0rem, 2.3rem);
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  @extend %transition; 
+
+  &:hover {
+    color: $color-white;
+    cursor: url('../../assets/icons/Vector.svg'), pointer;
+  }
+
+}
+
+
+
+.--mail {
+  margin: 45px 0px 0px 60px;
+  padding: 0px 0px 0px 0px;
+
+  @include media-mobile-small {
+    margin: 16px 0px 0px 70px;
+  } 
+}
+
+.--mail::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  width: 40px;
+  height: 32px;
+  background: url('../../assets/images/footer/icon-email.svg') no-repeat;
+
+  @include media-mobile-small{
+    top: -5px;
+    left: -60px;
+  } 
+}
+
+.--tel {
+  margin: 45px 0px 0px 60px;
+
+  @include media-mobile-small {
+    margin: 50px 0px 0px 80px;
+  } 
+}
+
+.--tel::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -60px;
+  width: 40px;
+  height: 32px;
+  background: url('../../assets/images/footer/icon-phone.svg') no-repeat;
+
+  @include media-mobile-small {
+    top: -5px;
+    left: -60px;
+  } 
+}
+
+.--address1 {
+  margin: 34px 0px 0px 40px;
+
+  @include media-mobile-small {
+    margin: 15px 0px 0px 40px;
+  } 
+}
+
+
+.--address1::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 40px;
+  height: 32px;
+  background: url('../../assets/images/footer/icon-marker.svg') no-repeat;
+
+  @include media-mobile-small {
+    top: 10px;
+    left: -40px;
+    width: 40px;
+  }
+}
+
+
+.--address2 {
+  margin: 32px 0px 0px 40px;
+
+  @include media-mobile-small {
+    margin: 40px 0px 0px 40px;
+  } 
+}
+
+.--address2::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 40px;
+  height: 32px;
+  background: url('../../assets/images/footer/icon-marker.svg') no-repeat;
+  
+}
+
+
+.footer__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  min-height: 350px;
+
+  @include media-tablet {
+    margin-top: 26px;
+  } 
+
+  @include media-mobile-small {
+    justify-content: center;
+    margin-top: 42px;
+    min-height: 269px;
+  }
+}
+
+.image__item {
+  @include media-mobile-small {
+    max-width: 260px;
+    min-height: 269px;
+  }
+}

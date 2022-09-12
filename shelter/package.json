@@ -1,0 +1,13 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "Private repository for @miarur",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/main/style.scss sass/main/style.css",
+    "pets": "sass --watch sass/pets/style.scss sass/pets/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

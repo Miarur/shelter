@@ -1,0 +1,86 @@
+.menu {
+  margin: 0px;
+  max-width: 443px;
+  min-height: 27px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+
+  @include media-mobile-2 {
+    display: none;
+  }
+
+  @include media-mobile-small {
+    display: none;
+  }
+}
+
+.menu__wrapper {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.menu__item {
+  margin-right: 35px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #CDCDCD;
+  position: relative;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  transition: all ease .2s;
+
+  &:hover {
+    color: $color-white;
+  }
+
+}
+
+.menu__link.--active {
+  color: $color-white;
+}
+
+
+.menu__link.--active::after {
+  height: 2px;
+  width: 100%;
+  background: $color-primary;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  bottom: 0;
+  transform: scaleX(1);
+  transition: all ease .2s;
+}
+
+.menu__link::after {
+  height: 2px;
+  width: 100%;
+  background: $color-primary;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: all ease .2s;
+}
+
+.menu__link:hover::after {
+  transform : scaleX(1);
+  transition: all ease .2s;
+} 

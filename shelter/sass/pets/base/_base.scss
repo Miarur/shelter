@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  cursor: url('../../assets/icons/Union.svg'), pointer;
+}
+
+html {
+  scroll-behavior: smooth; 
+  font-size: 10px;
+}
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  @extend %font-primary; 
+  @include font(2.0rem, 4.0rem, normal);
+  color: $color-black;
+  background: $background-color-main; 
+  background-repeat: no-repeat;
+}
+
+.show {
+  overflow: hidden;
+}
+
+h1 {
+  @extend %font-primary;
+  @include font(3.2rem, 3.52rem);
+}
+
+h2 { 
+  @extend %font-primary;
+  @include font(4.4rem, 5.72rem);
+}
+
+h3 {
+  @extend %font-primary;
+  @include font(3.5rem, 4.55rem);
+  color: $color-black;
+}
+
+h5 {
+  @extend %font-primary;
+  @include font(1.6rem, 1.65rem, $weight: 400);
+  color: $color-black;
+}
+
+p {
+  @extend %font-add;
+  @include font(1.5rem, 2.4rem);
+  color: $color-black-1;
+}
+
+button {
+  @extend %font-primary;
+  @include font(1.7rem, 2.21rem);
+  color: $color-text-button;
+}

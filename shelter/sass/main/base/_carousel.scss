@@ -1,0 +1,45 @@
+.carousel__wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 990px;
+  overflow: hidden;
+}
+
+
+.carousel {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  left: -990px;
+  display: flex;
+  flex-direction: row;
+  @extend %transition-2;
+}
+
+.card__item {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes move-left {
+  from {left:-990px;}
+  to {left: 0px;}
+}
+
+@keyframes move-right {
+  from {left: -990px;}
+  to {left: -1980px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.5s;
+}
+
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1.5s;
+}

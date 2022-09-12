@@ -1,0 +1,152 @@
+.donation {
+  margin: 0px;
+  padding: 0px 0px 98px 0px;
+  background-color: $background-color-second;
+
+  @include media-mobile-small {
+    padding: 0px 0px 41.5px 0px;
+  }
+}
+
+.donation__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 80px 0px 0px 0px;
+
+
+  @include media-mobile-small {
+    padding: 42px 0px 0px 0px;
+  }
+}
+
+.donation__image {
+  margin: 0px 30px 0px 0px;
+  padding: 0px;
+
+  @include media-tablet {
+    order: 2;
+    margin: 0px 0px 0px 0px;
+  } 
+
+  @include media-mobile-2 {
+    max-width: 260px;
+    height: 135.2px;
+  }
+
+  @include media-mobile-small {
+    max-width: 260px;
+    min-height: 135.2px;
+  }
+}
+
+.donation__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0px;
+  padding: 0px;
+  max-width: 380px;
+  min-height: 282px;
+
+  @include media-tablet {
+    order: 1;
+    margin-bottom: 60px;
+  } 
+
+  @include media-mobile-small {
+    padding: 0px 10px;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+}
+
+.--donation {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+
+  @include media-mobile-small {
+    @include font(2.5rem, 3.25rem);
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.donation__name {
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
+  letter-spacing: 0.03em;
+
+  @include media-mobile-small {
+    @include font(1.5rem, 2.4rem, $weight: 400);
+    text-align: center;
+    word-wrap: normal;
+    padding: 18px 0px 0px 0px;
+    letter-spacing: normal;
+  }
+}
+
+.donation__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+  width: 349px;
+  min-height: 43px;
+  background-color: $color-primary;
+  border-radius: 9px;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  @extend %transition;
+
+  @include media-mobile-small {
+    max-width: 281px;
+    min-height: 43px;
+  }
+}
+
+.donation__card-image {
+  margin: 0px 15px 0px 15px;
+  padding: 0px 0px;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+}
+
+.donation__requisites {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  @extend %font-primary;
+  @include font(2.0rem, 2.3rem);
+  letter-spacing: 0.06em;
+  color: $color-black;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+
+  @include media-mobile-small {
+    @include font(1.5rem, 1.65rem);
+  }
+}
+
+.donation__card:hover {
+  background-color: $color-primary-light;
+}
+
+.donation__description {
+  padding: 16px 0px 0px 0px;
+  margin: 0px;
+  @extend %font-add;
+  @include font(1.2rem, 1.8rem, $style: italic);
+  color: #B2B2B2;
+
+  @include media-mobile-small {
+    text-align: justify;
+    padding: 18px 0px 0px 0px;
+  }
+}

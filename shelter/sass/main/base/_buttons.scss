@@ -1,0 +1,33 @@
+.notOnly__button {
+  margin: 42px auto 0px 0px;
+  width: 207px;
+  height: 52px;
+  @extend %font-primary;
+  @include font(1.7rem, 2.21rem);
+  letter-spacing: 0.06em;
+  background: $color-primary;
+  border-radius: 100px;
+  color: $color-text-button;  
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  border: none;
+  @extend %transition;
+
+  &:hover {
+    background: $color-primary-light;
+    box-shadow: 2px 0px 10px rgb(16, 11, 11);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media-laptop {
+    margin: 42px auto 0px auto;
+  }
+
+  @include media-tablet {
+    margin: 42px auto 0px auto;
+  }
+
+}
+

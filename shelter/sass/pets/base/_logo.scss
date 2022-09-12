@@ -1,0 +1,48 @@
+.logo {
+  margin: 0px auto 0px 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  text-decoration: none;
+  @extend %transition;
+  
+  @include media-tablet {
+    margin: 0px 0px 0px 0px;
+  }
+
+  @include media-mobile-small {
+    margin: 0px 0px 0px 0px;
+  }
+
+  // @include media-tablet  {
+  //   margin: 0px 81px 0px 0px;
+  // }
+
+  // @include media-mobile-small {
+  //   margin: 0px 0px 0px 0px;
+  // }
+}
+
+.logo__item {
+  margin: 0px;
+  padding: 0px;
+  @extend %font-primary; 
+  @include font(3.2rem, 3.52rem);
+  letter-spacing: 0.06em;
+  color: $color-black;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+}
+
+.logo__item2 {
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  @extend %font-add; 
+  @include font(1.3rem, 1,495rem);
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: $color-black-2;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+}

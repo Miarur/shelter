@@ -1,0 +1,89 @@
+
+// buttons list-pets 
+
+.item__button {
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+  width: 187px;
+  height: 52px;
+  border-radius: 100px;
+  font-size: 17px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  color: #292929;
+  background: none;
+  border: 2px solid #FDDCC4;
+  @extend %transition;
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+}
+
+
+
+
+
+// buttons  paginator list-pets 
+
+.pagination__button {
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  @extend %transition;
+}
+
+.--inactive {
+  background: url('../../assets/images/page_our-pets/icons/button_paginator_inactive.svg') no-repeat;
+  background-position: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.--inactive-1 {
+  background: url('../../assets/images/page_our-pets/icons/button_paginator_inactive2.svg') no-repeat;
+  background-position: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.--active {
+  background: url('../../assets/images/page_our-pets/icons/button_paginator_active.svg') no-repeat;
+  background-position: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+
+.--active-1 {
+  background: url('../../assets/images/page_our-pets/icons/button_paginator.svg') no-repeat;
+  background-position: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.--active-2 {
+  background: url('../../assets/images/page_our-pets/icons/button_paginator2.svg') no-repeat;
+  background-position: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.pagination__button.--active:hover,
+.pagination__button.--active-1:hover,
+.pagination__button.--active-2:hover
+ {
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  background-color: $color-primary;
+}
+
+.pagination__button.--active:active,
+.pagination__button.--active-1:active,
+.pagination__button.--active-2:active
+ {
+  cursor: url('../../assets/icons/Vector.svg'), pointer;
+  background-color: $color-primary-light;
+}
+
+
+

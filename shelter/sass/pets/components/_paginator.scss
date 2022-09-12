@@ -1,0 +1,22 @@
+.pagination__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px auto 0px auto;
+  padding: 0px 0px 98px 0px;
+  max-width: 340px;
+  min-height: 52px;
+
+  @include media-tablet {
+    margin: 10px auto 0px auto;
+    padding: 0px 0px 75px 0px;
+  }
+
+  @include media-mobile-small {
+    padding: 0px 0px 42.5px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
